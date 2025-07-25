@@ -18,7 +18,7 @@ if upload_file is not None:
         st.write(df.describe())
 
     number_of_rows = st.number_input("how many row you want to see?", min_value= 1, max_value= len(df))
-    if st.button("view add data"):
+    if st.button("view data"):
         st.write(df.head(number_of_rows))
 
     st.subheader("Filer the data")
